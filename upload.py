@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 
 #from Main import derive_by_web
 
-app = Flask(__name__, static_url_path = "")
+app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 

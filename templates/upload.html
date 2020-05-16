@@ -6,9 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="swiper.min.css">	
-		<link rel="stylesheet" href="./upload.css" />	
+        <!-- <link rel="stylesheet" href="../static/styles/upload.css" />	 -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/upload.css') }}">
 </head>
 <body>
+    
 
 <div class="container-fluid" id="outer" style="text-align:center">
     <h1>Handwritten Text Recognition</h1>
