@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="swiper.min.css">	
+		<link rel="stylesheet" href="./upload.css" />	
+</head>
+<body>
+
+<div class="container-fluid" id="outer" style="text-align:center">
+    <h1>Handwritten Text Recognition</h1>
+    <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file-picker">Upload your file here</label><br><br/>
+                <input class="submit_button" id="file-picker" type="file" name="file" onchange="loadFile(event)" accept="image/*"  multiple>
+                <button class="submit_button" type="submit" value="Upload" id="upload-button" class="btn btn-primary">Submit</button>
+               
+              </div>
+
+        </form>
+</div>
+
+</body>
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+
+</html>

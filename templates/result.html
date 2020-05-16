@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Result</title>
+<style>
+#outer{
+  background-image: url('1.jpg');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html, body {
+  height: 100%;
+}
+
+#outer{
+  height: 100%;
+  font-size: large;
+  font-family: Arial;
+}
+textarea { 
+    font-size: 40px;
+    font-family: Arial;
+    }
+p{
+   font-size: 40px;
+  font-family: Arial; 
+}
+</style>
+
+</head>
+<body>
+    <div class="container-fluid" id="outer" style="text-align:center">
+        <h1>Welcome to my SimpleHTR Demo</h1>
+        <div>
+        <img src="{{url_for('static', filename=image_name)}} " class="figure-img img-fluid rounded" alt="Upload Image." width="1000">
+        <p class="bg-success">
+            <b>Recognized Text</b><br>
+        </p>
+        <textarea class="form-control" id="result" width="500"></textarea>
+    </div>
+
+    </div>
+</body>
+<script>
+     document.getElementById("result").value = "{{result}}"
+</script>
+
+</html>

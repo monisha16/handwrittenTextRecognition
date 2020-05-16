@@ -1,0 +1,39 @@
+* {
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+    color: white;
+	font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+ body {
+	 align-items: center;
+	background-color: #17171a;
+	overflow-x: hidden;
+	/* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+
+  } 
+
+
+.submit_button{
+    background-color: rgb(0, 0, 0); /* purple #9c11b8*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+#submit_button:hover {
+	box-shadow: 0 12px 16px 0 rgba(216, 11, 11, 0.829), 0 17px 50px 0 rgba(255, 0, 0, 0.801);
+	background-color: #f01010
+  }
+  #submit_button:active {
+	background-color: #1add21;
+	transform: translateY(4px);
+  }
